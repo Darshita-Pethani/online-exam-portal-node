@@ -1,0 +1,87 @@
+----> Commit/push own branch steps :-
+
+1) git status :- get the list of all change files and verify file changes. it is display in red color.
+
+2) git add * / git add . :-add all changed files in the git.
+
+3) git status ( OR  git status -s ) :- re-verify added files. it's display in green color 
+
+4) git commit -m "my commit message" (press Enter key)
+
+5) git status :- check all it's give you that "nothing to commit,working tree clean".
+
+6) git push origin branch name here :- Ex(git push origin discount_coupon_report)
+
+
+----> Create new branch steps :-
+
+1) Always create branch from development.
+
+2) git checkout development 
+
+3) git pull :- to get latest code in local system.
+
+4) Now you need to create new branch from development branch :-
+	
+	a) click on "development" text bottom left corner.
+
+	b) select "+ create new branch" option.
+
+	c) enter new branch name in text box and press enter key.
+
+5) now you automatic entered in your new branch.
+
+6) git status :- you can confirm with git status command.
+
+7) start your development.
+
+		OR 
+
+1) git checkout -b branchname :- create new branch and automatic entered in new branch.
+
+2) git branch :- check how many branch in git.
+
+
+----> How to merge 2 branch steps :-
+
+1) git status :- get the list of all change files and verify file changes. it is display in red color.
+
+2) after check git status you can commit/push your branch followed by it steps.
+
+3) git checkout development 
+
+4) git pull :- to get latest code in local syatem.
+
+5) git merge branch name :- you can merge you branch with this command Ex:(git merge development).
+
+6) git status:- you can confirm with git status command.
+
+
+----> How to change branch name steps :-
+
+1) git branch -m new-branch-name :- change branch name.
+
+
+----> How to delete branch steps :-
+
+1) git branch -d multi_store_phase_2 :- Delete branch locally.
+
+2) git push origin --delete multi_store_phase_2 :- Delete branch remotely.
+
+
+----> check or edit user name and email in git :-
+
+1) git config user.name "DevE12" :- set user name in git.
+
+2) git config user.name :- check git user name in git.
+
+3) git config user.email mailto:deve12@xyz.net :- set user email in git.
+
+4) git config user.email :- check git user email in git.
+
+
+----> check user commit details in git :-
+
+1) git log -p -1:- check and display last commit details in git.
+
+2) git log :- display all commit details in git.
